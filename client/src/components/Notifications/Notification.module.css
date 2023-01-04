@@ -1,0 +1,19 @@
+.notification-box {
+  position: absolute;
+  width: 400px;
+  background-color: white;
+  right: 0;
+  top: 20%;
+  padding: 1rem;
+  background-color: #51cf66;
+  color: white;
+  border-radius: 8px;
+  transform: translateX(100%);
+  opacity: 0;
+  transition: all 0.5s;
+}
+
+.active {
+  transform: translateX(10%);
+  opacity: 1;
+}
