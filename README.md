@@ -1,10 +1,10 @@
 <h1>Crypto Portfolio App</h1>
 
+<h2><a href="https://bright-nasturtium-cb6759.netlify.app/">Live Demo</a></h2>
+
 <p>A web application for tracking and managing cryptocurrency investments. Built with React, Node.js, Express, and various crypto APIs.</p>
 
 <h2>Features</h2>
-
-<h2><a href="https://bright-nasturtium-cb6759.netlify.app/">Live Demo</a></h2>
 
 <ul>
   <li>Real-time tracking of portfolio value and individual coin prices</li>
