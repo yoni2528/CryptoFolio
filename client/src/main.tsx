@@ -10,9 +10,7 @@ import store from './store'
 ReactDOM.createRoot(document.getElementById('root') as HTMLElement).render(
   <Provider store={store}>
     <BrowserRouter>
-      <React.StrictMode>
         <App />
-      </React.StrictMode>
     </BrowserRouter>
   </Provider>
 )
