@@ -2,6 +2,12 @@
 
 <p>A web application for tracking and managing cryptocurrency investments. Built with React, Node.js, Express, and various crypto APIs.</p>
 
+<h3><a href="https://sweet-gelato-b9751e.netlify.app/">Live Demo</a></h3>
+
+
+https://user-images.githubusercontent.com/56216286/210632133-f8372981-86aa-46ef-8c4f-43b5a37882dd.mp4
+
+
 <h2>Features</h2>
 
 <ul>
