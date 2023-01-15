@@ -11,7 +11,7 @@ const DeleteTokenButton: React.FC<{ tokenId: string }> = ({ tokenId }) => {
     dispatch(
       tokenDeleteModalActions.openModal({
         title: 'Are You Sure?',
-        message: 'This action is irreverseble ',
+        message: 'This action cannot be undone.',
         btnText: 'yes im sure!',
       })
     )

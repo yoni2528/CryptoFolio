@@ -25,6 +25,7 @@ const Dashboard = () => {
   const { handleTopPerfoemanceRequest, handleHotTokensList } = useThirdApiRequests()
 
   useEffect(() => {
+    console.log('running')
     handleGetAllTokens()
     handleGetPortfolioData().then((data) => setPortfolioData(data.data))
     handleTopPerfoemanceRequest().then((data) => {

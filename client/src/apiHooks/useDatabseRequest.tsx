@@ -7,7 +7,6 @@ import { useDispatch } from 'react-redux'
 import { tokenListActions } from '../store/reducers/tokenListReducer'
 import { portfolioActions } from '../store/reducers/portfolioReducer'
 import { loadingModalActions } from '../store/reducers/modalReducers'
-import { notificationActions } from '../store/reducers/notificationsReducer'
 import useNotification from '../customHooks/useNotification'
 
 export type UserUpdate = {
