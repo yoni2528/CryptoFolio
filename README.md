@@ -1,4 +1,4 @@
-<h1>Crypto Portfolio App</h1>
+<h1>Crypto Portfolio Website</h1>
 
 <p>A web application for tracking and managing cryptocurrency investments. Built with React, Node.js, Express, and various crypto APIs.</p>
 
