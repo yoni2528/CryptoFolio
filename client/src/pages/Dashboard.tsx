@@ -1,15 +1,16 @@
 import React, { useEffect, useState } from 'react'
 import styles from './Dashboard.module.css'
 import clsx from 'clsx'
-import CardSmall from '../components/cards/CardSmall'
+import CardSmall from '../components/Cards/CardSmall'
 import useDatabseRequest from '../apiHooks/useDatabseRequest'
 
 import { IoCardOutline, IoCashOutline, IoCaretUpOutline, IoCaretDownOutline } from 'react-icons/io5'
-import CardMedium from '../components/cards/CardMedium'
-import CardNews from '../components/cards/CardNews'
+import CardMedium from '../components/Cards/CardMedium'
+import CardNews from '../components/Cards/CardNews'
 import { useSelector } from 'react-redux'
 import useThirdApiRequests from '../apiHooks/useThirdApiRequests'
-import CardCharts from '../components/cards/CardCharts'
+import CardCharts from '../components/Cards/CardCharts'
+import { RootState } from '../store'
 
 const Dashboard = () => {
   const [topPerformanceList, setTopPerformanceList] = useState(undefined)
@@ -19,13 +20,12 @@ const Dashboard = () => {
     totalBalance: number
   } | null>(null)
 
-  const data = useSelector((state: any) => state.tokenList.data)
+  const data = useSelector((state: RootState) => state.tokenList.data)
 
   const { handleGetAllTokens, handleGetPortfolioData } = useDatabseRequest()
   const { handleTopPerfoemanceRequest, handleHotTokensList } = useThirdApiRequests()
 
   useEffect(() => {
-    console.log('running')
     handleGetAllTokens()
     handleGetPortfolioData().then((data) => setPortfolioData(data.data))
     handleTopPerfoemanceRequest().then((data) => {

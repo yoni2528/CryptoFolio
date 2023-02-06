@@ -77,3 +77,29 @@ td {
     transform: translateY(0);
   }
 }
+
+@media (max-width: 1050px) {
+  .portfolio-layout {
+    max-width: 100%;
+    overflow-x: scroll;
+    height: 100vh;
+  }
+}
+
+@media (max-width: 550px) {
+  .portfolio-layout {
+    overflow-x: scroll;
+    display: flex;
+    margin: 2rem auto;
+    height: 100vh;
+
+    width: 350px;
+  }
+  table {
+    overflow-x: scroll;
+  }
+  td,
+  th {
+    padding: 1rem;
+  }
+}

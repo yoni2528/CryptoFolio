@@ -1,6 +1,6 @@
 import React from 'react'
-import AuthPageLayout from '../layouts/authPagesLayout/authPagesLayout'
-import AuthUser from '../components/authUser/authUser'
+import AuthPageLayout from '../layouts/AuthPagesLayout/AuthPagesLayout'
+import AuthUser from '../components/AuthUser/AuthUser'
 import useAuthRequest from '../apiHooks/useAuthRequest'
 
 export type User = {
@@ -18,6 +18,7 @@ const SignUp = () => {
     <AuthPageLayout>
       <AuthUser
         onFormSubmit={handleFormSubmit}
+        testUser={false}
         title={'Sign up'}
         subTitle={'Effortlessly track and manage your investments'}
         btnText={'Sign Up'}

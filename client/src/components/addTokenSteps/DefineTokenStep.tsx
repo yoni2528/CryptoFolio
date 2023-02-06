@@ -1,13 +1,13 @@
 import React, { useState } from 'react'
 
-import Input from '../global/Input'
-import AddTokenCard from './addTokenCard'
+import Input from '../Global/Input'
+import AddTokenCard from './AddTokenCard'
 
 import styles from './DefineTokenStep.module.css'
 
 import { useSelector, useDispatch } from 'react-redux/'
 import { tokenState } from '../../store'
-import Button from '../global/Button'
+import Button from '../Global/Button'
 import { tokenSelectedActions } from '../../store/reducers/tokenSelectedReducer'
 
 import { useNavigate } from 'react-router-dom'

@@ -5,8 +5,8 @@ import { authActions } from './store/reducers/authReducer'
 import Cookie from 'js-cookie'
 
 import { ModalWrapper } from './components/componentContainer'
-import AuthApp from './components/appAllocation/AuthApp'
-import MainApp from './components/appAllocation/MainApp'
+import AuthApp from './components/AppAllocation/AuthApp'
+import MainApp from './components/AppAllocation/MainApp'
 import Notification from './components/Notifications/Notification'
 
 const App = () => {
@@ -23,7 +23,6 @@ const App = () => {
     <>
       <ModalWrapper />
       <Notification />
-
       {isLoggedIn ? <MainApp /> : <AuthApp />}
     </>
   )

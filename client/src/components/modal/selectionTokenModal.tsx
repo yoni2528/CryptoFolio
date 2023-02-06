@@ -6,10 +6,10 @@ import { tokenState } from '../../store'
 import { tokenSelectedActions } from '../../store/reducers/tokenSelectedReducer'
 import { tokenSelectionModalActions } from '../../store/reducers/modalReducers'
 
-import SelectTokenStep from '../addTokenSteps/SelectTokenStep'
-import DefineTokenStep from '../addTokenSteps/DefineTokenStep'
+import SelectTokenStep from '../AddTokenSteps/SelectTokenStep'
+import DefineTokenStep from '../AddTokenSteps/DefineTokenStep'
 
-import styles from './selectionTokenModal.module.css'
+import styles from './SelectionTokenModal.module.css'
 
 const TokenSelectionModal = () => {
   const tokenSelected = useSelector((state: tokenState) => state.selectToken.name)

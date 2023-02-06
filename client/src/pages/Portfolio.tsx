@@ -3,7 +3,7 @@ import React, { useEffect, useState } from 'react'
 import styles from './portfolio.module.css'
 import useDatabseRequest from '../apiHooks/useDatabseRequest'
 import { useSelector } from 'react-redux'
-import DeleteTokenButton from '../components/deleteTokenButton/deleteTokenButton'
+import DeleteTokenButton from '../components/DeleteTokenButton/DeleteTokenButton'
 import AddTransactions from '../components/AddTransactionsButton/AddTransactions'
 import clsx from 'clsx'
 

@@ -2,7 +2,7 @@
 import React from 'react'
 import { useDispatch, useSelector } from 'react-redux'
 import { errorModalActions, loadingModalActions } from '../store/reducers/modalReducers'
-import { spinnerActions } from '../store/reducers/SpinnerReducer'
+import { spinnerActions } from '../store/reducers/spinnerReducer'
 
 export type postRequestObj = {
   method: string

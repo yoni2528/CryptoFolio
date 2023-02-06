@@ -4,13 +4,13 @@ import styles from './CardMedium.module.css'
 
 const CardMedium: React.FC<{
   cardTitle: string
-  data?: []
+  data?: [tokenData]
 }> = (props) => {
   return (
     <div className={styles['card-medium']}>
       <h3 className={styles['card-medium-title']}>{props.cardTitle}</h3>
       <ul className={styles['token-list']}>
-        {props.data?.map((token: tokenData, index) => {
+        {props.data?.map((token: tokenData, index: number) => {
           return (
             <li key={index} className={styles['list-item']}>
               <div className={styles['token-details']}>

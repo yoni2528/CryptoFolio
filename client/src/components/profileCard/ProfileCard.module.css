@@ -68,3 +68,17 @@
 .dropdown {
   cursor: pointer;
 }
+
+@media (max-width: 750px) {
+  .block-user-details {
+    width: 100%;
+  }
+
+  .form-title {
+    font-size: 0.7rem;
+  }
+
+  .section-title {
+    font-size: 1.2rem;
+  }
+}

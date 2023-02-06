@@ -48,3 +48,9 @@
 .active {
   color: #2e4cd6;
 }
+
+@media (max-width: 550px) {
+  .logout {
+    margin-bottom: 12rem;
+  }
+}

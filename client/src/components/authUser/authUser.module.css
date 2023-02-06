@@ -54,3 +54,31 @@
     transform: translateX(0);
   }
 }
+
+.user-demo {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  background-color: #ffeae3;
+  padding: 1rem;
+  border-radius: 12px;
+}
+
+.user-demo-details {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  font-size: 0.875rem;
+}
+
+@media (max-width: 900px) {
+  .title {
+    font-size: 1.4rem;
+  }
+  .sub-title {
+    font-size: 0.75rem;
+  }
+  .login-redirect {
+    font-size: 0.75rem;
+  }
+}

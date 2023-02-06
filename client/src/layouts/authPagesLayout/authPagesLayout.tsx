@@ -1,4 +1,4 @@
-import styles from './authPagesLayout.module.css'
+import styles from './AuthPagesLayout.module.css'
 import React from 'react'
 type Props = {
   children?: React.ReactNode

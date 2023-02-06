@@ -6,11 +6,11 @@ import useAuthRequest from '../../apiHooks/useAuthRequest'
 
 import logo from '../../assets/logo.png'
 import { NavListItems } from '../../utils/Helper'
-import Button from '../../components/global/Button'
+import Button from '../../components/Global/Button'
 
 import styles from './SideBar.module.css'
 
-const SideBar = () => {
+const SideBar: React.FC<{ onMenuToggle: () => void }> = ({ onMenuToggle }) => {
   const { pathname } = useLocation()
   const { handleLogOut } = useAuthRequest()
   return (
@@ -24,6 +24,7 @@ const SideBar = () => {
                 <li className={styles['navbar-list-item']} key={index}>
                   <navItem.icon className={styles.icon} />
                   <Link
+                    onClick={onMenuToggle}
                     className={clsx(pathname === `/${navItem.path}` && styles.active)}
                     to={`/${navItem.path}`}
                   >

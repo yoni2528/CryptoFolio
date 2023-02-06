@@ -1,6 +1,6 @@
 // eslint-disable-next-line @typescript-eslint/no-unused-vars
 import React from 'react'
-import { BASE_URL } from '../data/static'
+import { BASE_URL } from '../config/static'
 import useRequest from './useRequest'
 import { User } from '../pages/Signup'
 import { useDispatch } from 'react-redux'

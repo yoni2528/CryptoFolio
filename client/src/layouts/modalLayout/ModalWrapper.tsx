@@ -1,12 +1,12 @@
 import React from 'react'
 import styles from './ModalWrapper.module.css'
 import clsx from 'clsx'
-import DeleteTokenModal from '../../components/modal/deleteTokenModal'
+import DeleteTokenModal from '../../components/Modal/DeleteTokenModal'
 
 import { useSelector, useDispatch } from 'react-redux'
 import { errorModalActions, tokenDeleteModalActions } from '../../store/reducers/modalReducers'
-import ErrorHandleModal from '../../components/modal/handleErrorModal'
-import LoadingDataModal from '../../components/modal/dataLoadingModal'
+import ErrorHandleModal from '../../components/Modal/HandleErrorModal'
+import LoadingDataModal from '../../components/Modal/DataLoadingModal'
 
 const ModalWrapper = () => {
   const isErrorModal = useSelector((state: any) => state.errorModal.isOpen)

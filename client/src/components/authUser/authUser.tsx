@@ -1,7 +1,7 @@
 import React, { useState } from 'react'
-import Button from '../global/Button'
-import Input from '../global/Input'
-import styles from './authUser.module.css'
+import Button from '../Global/Button'
+import Input from '../Global/Input'
+import styles from './AuthUser.module.css'
 import { User } from '../../pages/Signup'
 import { Link } from 'react-router-dom'
 import clsx from 'clsx'
@@ -12,7 +12,8 @@ const AuthUser: React.FC<{
   onFormSubmit: (userAuth: User) => void
   pageType: string
   btnText: string
-}> = ({ title, subTitle, onFormSubmit, btnText, pageType }) => {
+  testUser: boolean
+}> = ({ title, subTitle, onFormSubmit, btnText, pageType, testUser }) => {
   const [validationFields, setValidationFields] = useState<any>({
     email: '',
     password: '',
@@ -91,6 +92,21 @@ const AuthUser: React.FC<{
     <div className={styles.layout}>
       <h2 className={styles.title}>{title}</h2>
       <h3 className={styles['sub-title']}>{subTitle}</h3>
+      {testUser && (
+        <div className={styles['user-demo']}>
+          <div>
+            <h2>Test User</h2>
+          </div>
+          <div className={styles['user-demo-details']}>
+            <p>
+              <strong>email</strong> : demo@demo.com
+            </p>
+            <p>
+              <strong>password</strong> : 1234567
+            </p>
+          </div>
+        </div>
+      )}
       <form
         onSubmit={handleFormSubmit}
         className={clsx(styles.form, !formIsInvalid && styles['invalid'])}

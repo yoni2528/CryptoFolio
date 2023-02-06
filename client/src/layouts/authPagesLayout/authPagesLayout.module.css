@@ -30,3 +30,26 @@
   border-top-right-radius: 8px;
   border-bottom-right-radius: 8px;
 }
+
+@media (max-width: 1300px) {
+  .auth-layout {
+    width: 80%;
+  }
+
+  .auth-right {
+    width: 50%;
+  }
+}
+
+@media (max-width: 600px) {
+  .auth-layout {
+    width: 100%;
+    overflow-x: none;
+  }
+  .auth-left {
+    display: none;
+  }
+  .auth-right {
+    width: 90%;
+  }
+}

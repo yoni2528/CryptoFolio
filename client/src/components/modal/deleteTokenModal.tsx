@@ -1,7 +1,7 @@
 import React from 'react'
 import styles from './globalModal.module.css'
 import { useSelector } from 'react-redux'
-import Button from '../global/Button'
+import Button from '../Global/Button'
 import useDatabseRequest from '../../apiHooks/useDatabseRequest'
 
 const DeleteTokenModal: React.FC<{

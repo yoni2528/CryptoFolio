@@ -2,11 +2,11 @@ import React, { useEffect, useState } from 'react'
 import styles from './Profile.module.css'
 import useDatabseRequest from '../apiHooks/useDatabseRequest'
 import UploadImageInput from '../components/UploadImageInput/UploadImageInput'
-import ProfileCardsContainer from '../components/profileCard/ProfileCardsContainer'
+import ProfileCardsContainer from '../components/ProfileCard/ProfileCardsContainer'
 
 import { IoCameraOutline } from 'react-icons/io5'
 import Spinner from '../components/Spinner/Spinner'
-import { BASE_URL } from '../data/static'
+import { BASE_URL } from '../config/static'
 const Profile = () => {
   const { handleGetUserDetails } = useDatabseRequest()
   const [imagePatch, setImagePath] = useState<string>('')

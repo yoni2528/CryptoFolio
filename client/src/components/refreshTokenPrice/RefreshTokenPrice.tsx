@@ -1,6 +1,6 @@
 import React from 'react'
 import useDatabseRequest from '../../apiHooks/useDatabseRequest'
-import Button from '../global/Button'
+import Button from '../Global/Button'
 
 const RefreshTokenPrice = () => {
   const { handleRefreshTokenList } = useDatabseRequest()

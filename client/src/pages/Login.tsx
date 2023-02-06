@@ -1,7 +1,7 @@
 import React from 'react'
 
-import AuthPageLayout from '../layouts/authPagesLayout/authPagesLayout'
-import AuthUser from '../components/authUser/authUser'
+import AuthPageLayout from '../layouts/AuthPagesLayout/AuthPagesLayout'
+import AuthUser from '../components/AuthUser/AuthUser'
 
 import { User } from './Signup'
 import useAuthRequest from '../apiHooks/useAuthRequest'
@@ -13,15 +13,18 @@ const Login = () => {
   }
 
   return (
-    <AuthPageLayout>
-      <AuthUser
-        onFormSubmit={handleFormSubmit}
-        title={'Welcome To CryptoFolio'}
-        subTitle={'Manage your digital assets with ease and confidence'}
-        btnText={'Sign in'}
-        pageType={'login'}
-      />
-    </AuthPageLayout>
+    <>
+      <AuthPageLayout>
+        <AuthUser
+          onFormSubmit={handleFormSubmit}
+          title={'Welcome To CryptoFolio'}
+          testUser={true}
+          subTitle={'Manage your digital assets with ease and confidence'}
+          btnText={'Sign in'}
+          pageType={'login'}
+        />
+      </AuthPageLayout>
+    </>
   )
 }
 

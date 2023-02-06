@@ -2,7 +2,7 @@
 import React from 'react'
 import { tokenData } from '../store/reducers/tokenSelectedReducer'
 import useRequest from './useRequest'
-import { BASE_URL } from '../data/static'
+import { BASE_URL } from '../config/static'
 import { useDispatch } from 'react-redux'
 import { tokenListActions } from '../store/reducers/tokenListReducer'
 import { portfolioActions } from '../store/reducers/portfolioReducer'

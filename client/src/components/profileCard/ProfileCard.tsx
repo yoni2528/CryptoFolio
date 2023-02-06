@@ -6,10 +6,10 @@ import {
   IoChevronDownOutline,
   IoChevronUpOutline,
 } from 'react-icons/io5'
-import Button from '../global/Button'
-import Input from '../global/Input'
+import Button from '../Global/Button'
+import Input from '../Global/Input'
 import useDatabseRequest from '../../apiHooks/useDatabseRequest'
-import { CardDetails } from './types'
+import { CardDetails } from './Types'
 
 import clsx from 'clsx'
 

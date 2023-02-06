@@ -1,9 +1,9 @@
 import React, { useState } from 'react'
 
-import Input from '../global/Input'
-import AddTokenCard from './addTokenCard'
+import Input from '../Global/Input'
+import AddTokenCard from './AddTokenCard'
 
-import { TOKEN_DATA } from '../../data/tokens_list'
+import { TOKEN_DATA } from '../../config/tokens_list'
 import styles from './SelectTokenStep.module.css'
 import { IoChevronForwardOutline } from 'react-icons/io5'
 
